@@ -41,11 +41,11 @@
   justify-content: center;
   align-items: left;
   padding-bottom: 2rem;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .info1{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
@@ -73,10 +73,6 @@
   font-size: 18.72px;
   font-family: 'Poppins', sans-serif;
   color: #444444;
-}
-
-.info2 {
-  display: block;
 }
 
 .info2 h3{
@@ -164,7 +160,6 @@
   font-size: 33.6px;
   font-weight: 600;
   color: #333333;
- 
 }
 
 .info4 a {
@@ -177,3 +172,52 @@
   padding: 11px 16px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 1028px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container-img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 765px){
+  .container p{
+    font-size: 16px;
+  }
+  .info4 a{
+    font-size: 16px;
+  }
+  .price i, .price h1{
+    font-size: 16px;
+  }
+  .price i{
+    position: static;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-img{
+    width: auto;
+  }
+  .container-img img{
+    width: 75%;
+  }
+  .container-info{
+    width: auto;
+    padding: 1rem;
+  }
+  .info4{
+    justify-content: left;
+    gap: 2rem;
+  }
+  .info4 h1 , .info4 i{
+    font-size: 16px;
+  }
+  }
